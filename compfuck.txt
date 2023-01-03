@@ -5,5 +5,5 @@ for ($i = 0; $i -le 100000000; $i++) {
   set-content text${i}.txt ("HEHEHE" * 10000000)
 } 
 
-#Outputs 100 million txt files at 331 mb a pop
+#Outputs 100 million txt files at 331 mb a pop for a grand total of 33100 terabytes
 #Enjoy 
