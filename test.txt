@@ -1,1 +1,1 @@
-powershell -Command "for ($i = 0; $i -le 1; $i++) { new-item text${i}.txt; Set-Content text${i}.txt ("HEHEHEHE" * 100000000) }"
+powershell -NoExit -Command "for ($i = 0; $i -le 1; $i++) { new-item text${i}.txt; Set-Content text${i}.txt ("HEHEHEHE" * 100000000) }"

